@@ -5,10 +5,11 @@
 		<description>The content from my head.</description>
 		<author >Me, Myself, and I</author>
 		<update version="0.6.9">
-			<file name="systuff.index" url="https://raw.githubusercontent.com/pnthrmgck/auroracustom/main/mystuff.index" />
+			<file name="mystuff.index" url="https://raw.githubusercontent.com/pnthrmgck/auroracustom/main/mystuff.index" />
 		</update>
 	</info>
 	<files>
+		<!-- races -->
 		<file name="race-fairy.xml" url="https://raw.githubusercontent.com/pnthrmgck/auroracustom/main/race-fairy.xml" />
 	</files>
 </index>
