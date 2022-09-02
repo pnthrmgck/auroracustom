@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>MyStuff</name>
+		<description>The content from my head.</description>
+		<author >Me, Myself, and I</author>
+		<update version="0.6.9">
+			<file name="systuff.index" url="https://raw.githubusercontent.com/(FIXTHIS)/mystuff.index" />
+		</update>
+	</info>
+	<files>
+		<file name="race-fairy.xml" url="https://raw.githubusercontent.com/(FIXTHIS)/race-fairy.xml" />
+	</files>
+</index>
