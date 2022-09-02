@@ -1,2 +1,89 @@
-<test>
-</test>
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Fairy</name>
+        <description>Fairy Race from Folk of the Feywild</description>
+        <author>Unearthed Arcana 77</author>
+        <update version="0.0.3">
+            <file name="race-fairy.xml" url="https://raw.githubusercontent.com/auroracustom/main/race-fairy.xml" />
+        </update>
+    </info>
+
+	<!-- Fairy -->
+	<element name="Fairy" type="Race" source="Unearthed Arcana 77 - Folk of the Feywild" id="ID_RACE_FAIRY">
+		<description>
+      <p>The Feywild is home to many fantastic peoples, including fairies. Fairies are a wee folk, but not nearly as much so as their pixie and sprite friends.</p>
+      <p class="indent">Infused with the magic of the Feywild, fairies share a few commonalities with one another but can differ widely in appearance, behavior, and attitude. Many fairies have a special physical characteristic that sets them apart from other creatures of their kind. For your fairy, roll on the Fey Characteristic table or choose an option from it. The Feywild is a wild place, so come up with your own characteristic if none of these fit your character.</p>
+			<h4>FAIRY TRAITS</h4>
+			<p>Faries have many traits in common with the fae.</p>
+			<p class="indent"><b><i>Ability Score Increase. </i></b>Increase one ability score by 2, and increase a different one by 1.</p>
+			<p class="indent"><b><i>Age. </i></b> Who Knows? </p>
+			<p class="indent"><b><i>Alignment. </i></b>Most minotaurs lean toward chaotic alignments, and they have a slight inclination toward evil.</p>
+			<p class="indent"><b><i>Size. </i></b>Your size is Small.</p>
+			<p class="indent"><b><i>Speed. </i></b>Your base walking speed is 30 feet.</p>
+			<p class="indent"><b><i>Fairy Flight. </i></b>You have a flying speed equal to your walking speed and can hover. This flight is magical and does not require the use of your wings (if you have them).</p>
+			<p class="indent"><b><i>Fairy Magic. </i></b>You know the Druidcraft and Faerie Fire spells. You can cast Faerie Fire without expending a spell slot, and you must finish a long rest before you can cast it this way again. You can also cast this spell using any spell slots you have. Your spellcasting ability for these spells is your choice of Intelligence, Wisdom, or Charisma.</p>
+			<p class="indent"><b><i>Fey Passage. </i></b>You can squeeze through a space as narrow as 1 inch wide.</p>
+			<p class="indent"><b><i>Languages. </i></b>You can speak, read, and write Common and one other language that you and your DM agree is appropriate for the character.</p> 
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="any" value="2" />
+			<stat name="any" value="1" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FAIRY_FLIGHT" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FAIRY_MAGIC"/>
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FEY_PASSAGE"/>
+      <grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_WOTC_PSA_LANGUAGE_FAIRY" />
+		</rules>
+	</element>
+	
+  
+  <element name="Fairy Flight" type="Racial Trait" source="AU77" id="id="ID_RACIAL_TRAIT_FAIRY_FLIGHT">
+		<description>
+			<p>You have a flying speed equal to your walking speed and can hover. This flight is magical and does not require the use of your wings (if you have them).</p>
+		</description>
+		<sheet>
+			<description>You have a flying speed equal to your walking speed and can hover.</description>
+		</sheet>
+    <rules>
+			<stat name="innate speed:fly" value="30" bonus="base" />
+		</rules>
+	</element>
+	
+ <element name="Fairy Magic" type="Racial Trait" source="AU77" id="id="ID_RACIAL_TRAIT_FAIRY_MAGIC">
+		<description>
+      <p>You know the <em>Druidcraft</em> and <em>Faerie Fire</em> spells. You can cast Faerie Fire without expending a spell slot, and you must finish a long rest before you can cast it this way again. You can also cast this spell using any spell slots you have. Your spellcasting ability for these spells is your choice of Intelligence, Wisdom, or Charisma.</p>
+    </description>
+   <sheet>
+			<description>You know the druidcraft cantrip. (Charisma)</description>
+			<description>You can cast Faerie Fire 1/long rest. (Int/Wis/Cha)</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" level="1"/>
+      <grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" level="1"/>
+		</rules>
+	</element>
+  
+  <element name="Fey Passage" type="Racial Trait" source="AU77" id="id="ID_RACIAL_TRAIT_FEY_PASSAGE">
+		<description>
+      <p>You can squeeze through a space as narrow as 1 inch wide.</p>
+    </description>
+   <sheet>
+			<description>You can squeeze through a space as narrow as 1 inch wide.</description>
+		</sheet>
+	</element>
+    
+    <!-- Fairy Language -->
+    <element name="Fairy" type="Language" source="UA77" id="ID_LANGUAGE_FAIRY">
+        <description>
+            <p>Typically spoken by Fairies.</p>
+        </description>
+        <setters>
+            <set name="exotic">true</set>
+            <set name="speakers">Faries</set>
+        </setters>
+    </element>
+</elements>
