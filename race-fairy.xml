@@ -33,8 +33,8 @@
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_SMALL" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FAIRY_FLIGHT" />
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FAIRY_MAGIC"/>
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FEY_PASSAGE"/>
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FAIRY_MAGIC" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FEY_PASSAGE" />
       <grant type="Language" id="ID_LANGUAGE_COMMON" />
 			<grant type="Language" id="ID_WOTC_PSA_LANGUAGE_FAIRY" />
 		</rules>
