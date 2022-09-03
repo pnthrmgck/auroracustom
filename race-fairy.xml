@@ -36,7 +36,7 @@
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FAIRY_FLIGHT" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FEY_PASSAGE" />
       <grant type="Language" id="ID_LANGUAGE_COMMON" />
-			<grant type="Language" id="ID_WOTC_PSA_LANGUAGE_FAIRY" />
+			<grant type="Language" id="ID_LANGUAGE_FAIRY" />
 		</rules>
 	</element>
 	
