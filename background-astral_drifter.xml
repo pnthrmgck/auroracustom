@@ -18,7 +18,7 @@
                 <b>Languages: </b>Two of your choice<br/>
                 <b>Equipment: </b>A set of traveler’s clothes, a diary, an ink pen, a bottle of ink, and a pouch containing 10 gp
             </p>
-            <div element="ID__BACKGROUND_ASTRAL_DRIFTER" />
+            <div element="ID_BACKGROUND_ASTRAL_DRIFTER" />
         </description>
         <setters>
             <set name="short">Insight, Religion, Language, Language</set>
@@ -29,7 +29,7 @@
 			<select type="Language" name="Language (Acolyte)" number="2" supports="Standard||Exotic" />
             <grant type="Background Feature" id="ID_BACKGROUND_ASTRAL_DRIFTER_FEATURE_LONGEVITY" />
 		<grant type="Background Feature" id="ID_BACKGROUND_ASTRAL_DRIFTER_FEATURE_DIVINE_CONTACT" />
-		<grant type="Feat" name="Magic Initiate" />
+		<grant type="Feat" id="ID_PHB_FEAT_MAGICINITIATE" />
             <select type="List" name="Divine Contact Table" number="2">
 			<item id="1">Corellon, god of art and magic (chaotic good)</item>
 			<item id="2">Tymora, god of good fortune (chaotic good)</item>
