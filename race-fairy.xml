@@ -62,8 +62,8 @@
 			<description>You can cast Faerie Fire 1/long rest. (Int/Wis/Cha)</description>
 		</sheet>
 		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" level="1"/>
-      <grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" level="1"/>
+			<grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" />
+     			<grant type="Spell" id="ID_PHB_SPELL_FAERIE_FIRE" />
 		</rules>
 	</element>
   
