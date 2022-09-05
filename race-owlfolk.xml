@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Owlfolk</name>
+        <description>Owlfolk Race from Folk of the Feywild</description>
+        <author>Unearthed Arcana 77</author>
+        <update version="0.0.3">
+            <file name="race-owlfolk.xml" url="https://raw.githubusercontent.com/auroracustom/main/race-owlfolk.xml" />
+        </update>
+    </info>
+
+	<!-- Owlfolk -->
+	<element name="Owlfolk" type="Race" source="Unearthed Arcana 77 - Folk of the Feywild" id="ID_RACE_OWLFOLK">
+		<description>
+      <p>Distant kin of giant owls, owlfolk come in many shapes and sizes, from petite and fluffy to widewinged and majestic. Owlfolk have arms and legs like other Humanoids, as well as wings that extend from their back and shoulders.</p>
+      <p class="indent">Because of their ancestral tie to the Feywild, owlfolk can innately see the magic of their surroundings. Like owls, owlfolk are graced with feathers that make no sound when they move or fly, making it easy for them to sneak up on you in the library.
+Your owlfolk character might be nocturnal. Or perhaps your character is simply prone to rise later, embodying the common nickname of night owl.</p>
+			<h4>OWLFOLK TRAITS</h4>
+			<p>Faries have many traits in common with the fae.</p>
+			<p class="indent"><b><i>Ability Score Increase. </i></b>Increase one ability score by 2, and increase a different one by 1.</p>
+			<p class="indent"><b><i>Age. </i></b> Who Knows? </p>
+			<p class="indent"><b><i>Alignment. </i></b>Usually flat.</p>
+			<p class="indent"><b><i>Size. </i></b>You are Medium or Small. You choose the size when you gain this race.</p>
+			<p class="indent"><b><i>Speed. </i></b>Your base walking speed is 30 feet.</p>
+			<p class="indent"><b><i>Darkvision. </i></b>You can see in dim light within 90 feet of you as if it were bright light and in darkness as if it were dim light.</p>
+			<p class="indent"><b><i>Magic Sight. </i></b>Your keen senses can focus to see the presence of magic. You gain the ability to cast the Detect Magic spell, but only as a ritual. Your spellcasting ability for this spell is your choice of Intelligence, Wisdom, or Charisma. You can also cast this spell normally with any spell slots you have.</p>
+			<p class="indent"><b><i>Nimble Flight. </i></b>Thanks to your wings, you have a flying speed equal to your walking speed. When you fall, you can use your reaction to make a Dexterity saving throw (DC 10) to stop falling and fly in place until the start of your next turn.</p>
+			<p class="indent"><b><i>Silent Feathers. </i></b>You have proficiency in the Stealth skill.</i></b>
+      <p class="indent"><b><i>Languages. </i></b>You can speak, read, and write Common and one other language that you and your DM agree is appropriate for the character.</p> 
+    </description>
+		<sheet display="false" />
+		<rules>
+			<stat name="any" value="2" />
+			<stat name="any" value="1" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DARKVISION" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_MAGIC_SIGHT" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_NIMBLE_FLIGHT" />
+      <grant type="Racial Trait" id="ID_RACIAL_TRAIT_SILENT_FEATHERS" />
+      <grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_ANY" />
+		</rules>
+	</element>	
+ <element name="Darkvision" type="Racial Trait" source="AU77" id="ID_RACIAL_TRAIT_DARKVISION">
+		<description>
+      <p>You can see in dim light within 90 feet of you as if it were bright light and in darkness as if it were dim light.</p>
+    </description>
+   <sheet>
+			<description>You have darkvision.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+		</rules>
+	</element>
+  
+  <element name="Magic Sight" type="Racial Trait" source="AU77" id="ID_RACIAL_TRAIT_MAGIC_SIGHT">
+		<description>
+      <p>Your keen senses can focus to see the presence of magic. You gain the ability to cast the Detect Magic spell, but only as a ritual. Your spellcasting ability for this spell is your choice of Intelligence, Wisdom, or Charisma. You can also cast this spell normally with any spell slots you have.</p>
+    </description>
+   <sheet>
+			<description>You know the detect magic cantrip. (Charisma)</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" />
+		</rules>
+	</element>
+  
+  <element name="Nimble Flight" type="Racial Trait" source="AU77" id="ID_RACIAL_TRAIT_NIMBLE_FLIGHT">
+		<description>
+			<p>You have a flying speed equal to your walking speed and can hover. This flight is magical and does not require the use of your wings (if you have them).</p>
+		</description>
+		<sheet>
+			<description>You have a flying speed equal to your walking speed and can hover.</description>
+		</sheet>
+    <rules>
+			<stat name="innate speed:fly" value="30" bonus="base" />
+		</rules>
+	</element>
+  
+  <element name="Silent Feathers" type="Racial Trait" source="AU77" id="ID_RACIAL_TRAIT_SILENT_FEATHERS">
+		<description>
+      <p>You have proficiency in the Stealth skill.</p>
+    </description>
+   <sheet>
+			<description>You have proficiency in the Stealth skill.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+		</rules>
+	</element>
+  
+    
+</elements>
