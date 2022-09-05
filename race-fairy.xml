@@ -35,8 +35,8 @@
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FAIRY_MAGIC" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FAIRY_FLIGHT" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FEY_PASSAGE" />
-      <grant type="Language" id="ID_LANGUAGE_COMMON" />
-			<grant type="Language" id="ID_LANGUAGE_FAIRY" />
+    			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<select type="Language" name="Language (Half-Elf)" supports="Standard||Exotic" requirements="!ID_WOTC_WGTE_GRANTS_DARKMARKED"/>
 		</rules>
 	</element>
 	
@@ -76,14 +76,5 @@
 		</sheet>
 	</element>
     
-    <!-- Fairy Language -->
-    <element name="Fairy" type="Language" source="UA77" id="ID_LANGUAGE_FAIRY">
-        <description>
-            <p>Typically spoken by Fairies.</p>
-        </description>
-        <setters>
-            <set name="exotic">true</set>
-            <set name="speakers">Faries</set>
-        </setters>
-    </element>
+    
 </elements>
