@@ -11,6 +11,7 @@
 	<files>
 		<!-- races -->
 		<file name="race-fairy.xml" url="https://raw.githubusercontent.com/pnthrmgck/auroracustom/main/race-fairy.xml" />
+		<file name="race-owlfolk.xml" url="https://raw.githubusercontent.com/pnthrmgck/auroracustom/main/race-owlfolk.xml" />
 		<!-- backgrounds -->
 		<file name="background-astral_drifter.xml" url="https://raw.githubusercontent.com/pnthrmgck/auroracustom/main/background-astral_drifter.xml" />
 	</files>
