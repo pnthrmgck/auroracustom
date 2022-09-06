@@ -30,7 +30,7 @@
             <grant type="Background Feature" id="ID_BACKGROUND_ASTRAL_DRIFTER_FEATURE_LONGEVITY" />
 		<grant type="Background Feature" id="ID_BACKGROUND_ASTRAL_DRIFTER_FEATURE_DIVINE_CONTACT" />
 		<grant type="Feat" id="ID_PHB_FEAT_MAGICINITIATE" />
-            <select type="List" name="Divine Contact Table" number="2">
+            <select type="List" name="Divine Contact Table" number="1">
 			<item id="1">Corellon, god of art and magic (chaotic good)</item>
 			<item id="2">Tymora, god of good fortune (chaotic good)</item>
 			<item id="3">Fharlanghn, god of horizons and travel (neutral good)</item>
@@ -39,12 +39,12 @@
 			<item id="6">Zivilyn, god of wisdom (neutral)</item>
 			<item id="7">Arawn, god of life and death (neutral evil)</item>
 			<item id="8">Hecate, god of magic and moons (chaotic evil)</item>
-        <item id="9">Celestian, god of stars and wanderers (neutral)</item>
-        <item id="10">Ptah, god of knowledge and secrets (lawful neutral)</item>
+        		<item id="9">Celestian, god of stars and wanderers (neutral)</item>
+        		<item id="10">Ptah, god of knowledge and secrets (lawful neutral)</item>
 		</select>
         </rules>
     </element>
-    <element name="Feature: Longevity" type="Background Feature" source="Spelljammer" id="ID_BACKGROUND_ASTRAL_DRIFTER_FEATURE_LONGEVITY">
+    	<element name="Feature: Longevity" type="Background Feature" source="Spelljammer" id="ID_BACKGROUND_ASTRAL_DRIFTER_FEATURE_LONGEVITY">
 		<supports>Background Feature</supports>
         <description>
             <p>You are 20d6 years older than you look, because you have spent that much time in the Astral Sea without aging.</p>
