@@ -37,7 +37,7 @@
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_NIMBLE_FLIGHT" />
       			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SILENT_FEATHERS" />
      			<grant type="Language" id="ID_LANGUAGE_COMMON" />
-			<select type="Language" name="Language (Half-Elf)" supports="Standard||Exotic" requirements="!ID_WOTC_WGTE_GRANTS_DARKMARKED"/>
+			<select type="Language" name="Language (Half-Elf)" supports="Standard||Exotic" />
 		</rules>
 	</element>	
  <element name="Darkvision" type="Racial Trait" source="AU77" id="ID_RACIAL_TRAIT_DARKVISION">
