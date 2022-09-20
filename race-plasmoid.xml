@@ -44,7 +44,7 @@
     			<grant type="Language" id="ID_LANGUAGE_COMMON" />
 			<select type="Language" name="Language (Half-Elf)" supports="Standard||Exotic" requirements="!ID_WOTC_WGTE_GRANTS_DARKMARKED"/>
 		</rules>
-
+	</element>
 
  		<element name="Amorphous" type="Racial Trait" source="Spelljammer" id="ID_RACIAL_TRAIT_AMORPHOUS">
 		<description>
